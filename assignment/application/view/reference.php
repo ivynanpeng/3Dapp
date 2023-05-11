@@ -31,6 +31,6 @@
                     <h2><?php echo "Access date:".$data[$i]['d'] ?></h2>
                 
     	<?php } ?>
-        <a href="http://users.sussex.ac.uk/~np330/IvyPeng_web3D/IvyPeng_web3D/index.php">Back to Home</a>
+        <a href="https://users.sussex.ac.uk/~np330/3dapp/IvyPeng_web3D/index.php/home">Back to Home</a>
 </body>
 </html>

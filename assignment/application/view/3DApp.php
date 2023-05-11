@@ -7,12 +7,12 @@
 to-fit=no">
     <!-- Bootstrap CSS -->
   
-    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+    <link rel='stylesheet' type='text/css' href='../css/x3dom.css'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/custom.css">
     
     
      <title>Coca Cola 3D App template</title>
@@ -27,6 +27,7 @@ to-fit=no">
             document.getElementById('coke').style.display='none';
             document.getElementById('sprite').style.display='none';
             document.getElementById('pepper').style.display='none';
+            document.getElementById('more').style.display='none';
             document.getElementById(selected).style.display='block';
             }
       function changelook(){
@@ -312,8 +313,8 @@ to-fit=no">
     <div class="row">
       <div class="col-sm-4">
         <div class="card">
-          <a data-src="assets/images/renderimages/coca_cola.jpg" data-fancybox="coke" data-caption="My 3D Coke Can Render" class="thumbnail">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca Cola"></a>
+          <a data-src="../assets/images/renderimages/coca_cola.jpg" data-fancybox="coke" data-caption="My 3D Coke Can Render" class="thumbnail">
+            <img class="card-img-top img-fluid img-thumbnail" src="../assets/images/coca_cola.jpg" alt="Coca Cola"></a>
           <div class="card-body">
             <div id="title_coke"></div>
             <div id="subTitle_coke"></div>
@@ -324,8 +325,8 @@ to-fit=no">
       </div>
       <div class="col-sm-4">
         <div class="card">
-            <a data-src="assets/images/renderimages/sprite.jpg" data-fancybox="sprite" data-caption="My 3D Sprite Bottle Render" class="thumbnail">
-              <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite"></a>
+            <a data-src="../assets/images/renderimages/sprite.jpg" data-fancybox="sprite" data-caption="My 3D Sprite Bottle Render" class="thumbnail">
+              <img class="card-img-top img-fluid img-thumbnail" src="../assets/images/sprite.jpg" alt="Sprite"></a>
             <div class="card-body">
               <div id="title_sprite"></div>
               <div id="subTitle_sprite"></div>
@@ -336,8 +337,8 @@ to-fit=no">
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <a data-src="assets/images/renderimages/drpepper.jpg" data-fancybox="pepper" data-caption="My 3D Dr Pepper Cup Render" class="thumbnail">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg" alt="Dr Peper"></a>
+          <a data-src="../assets/images/renderimages/drpepper.jpg" data-fancybox="pepper" data-caption="My 3D Dr Pepper Cup Render" class="thumbnail">
+            <img class="card-img-top img-fluid img-thumbnail" src="../assets/images/dr_pepper.jpg" alt="Dr Peper"></a>
           <div class="card-body">
             <div id="title_pepper"></div>
             <div id="subTitle_pepper"></div>
@@ -381,7 +382,7 @@ to-fit=no">
                     
                     <x3d>
                       <scene>
-                        <inline  nameSpaceName="modelb"   mapDEFToId="true" onclick="animatemodels();" url="assets/sprite/export/sprite_b.x3d"></inline>
+                        <inline  nameSpaceName="modelb"   mapDEFToId="true" onclick="animatemodels();" url="../assets/sprite/export/sprite_b.x3d"></inline>
                       </scene>
     
                     </x3d>
@@ -420,17 +421,17 @@ to-fit=no">
                       3D Image Gallery
                     </div>
                   <div class="gallery col-sm-12 btn-group ">
-                  <a data-src="assets/images/gallery_images/<?php echo $is1;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $is1;?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $is1;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D  Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $is1;?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $is2;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $is2;?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $is2;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D  Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $is2;?>.jpg'>
                     </a>
-                    <a data-src="assets/images/gallery_images/<?php echo $is3;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $is3; ?>.jpg'>
+                    <a data-src="../assets/images/gallery_images/<?php echo $is3;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D  Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $is3; ?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $is4;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $is4; ?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $is4;?>.jpg" data-fancybox="sprite_gallery" data-caption="My 3D Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $is4; ?>.jpg'>
                   </a>
                 </div>
                     
@@ -489,7 +490,7 @@ to-fit=no">
                    <div class="model3D">
                     <x3d>
                       <scene>
-                        <inline  nameSpaceName="model" mapDEFToId="true" onclick="animatemodel();" url="assets/coke/export/coke_animation2.x3d"></inline>
+                        <inline  nameSpaceName="model" mapDEFToId="true" onclick="animatemodel();" url="../assets/coke/export/coke_animation2.x3d"></inline>
                       
                       
                       </scene>
@@ -537,17 +538,17 @@ to-fit=no">
                       3D Image Gallery
                     </div>
                   <div class="gallery col-sm-12 btn-group ">
-                  <a data-src="assets/images/gallery_images/<?php echo $ic1;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $ic1;?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $ic1;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $ic1;?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $ic2;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $ic2;?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $ic2;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $ic2;?>.jpg'>
                     </a>
-                    <a data-src="assets/images/gallery_images/<?php echo $ic3;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $ic3; ?>.jpg'>
+                    <a data-src="../assets/images/gallery_images/<?php echo $ic3;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $ic3; ?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $ic4;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Coke Can Render" class="thumbnail" >
-                    <img class="card-img-top img-thumbnail"  src='assets/images/gallery_images/<?php echo $ic4; ?>.jpg'>
+                  <a data-src="../assets/images/gallery_images/<?php echo $ic4;?>.jpg" data-fancybox="coke_gallery" data-caption="My 3D Render" class="thumbnail" >
+                    <img class="card-img-top img-thumbnail"  src='../assets/images/gallery_images/<?php echo $ic4; ?>.jpg'>
                   </a> 
                 </div>
                     
@@ -601,7 +602,7 @@ to-fit=no">
                    <div class="model3D">
                     <x3d>
                       <scene>
-                        <inline nameSpaceName="modela" mapDEFToId="true"   onclick="animatemodeld();" url="assets/drpepper/export/dr+pepper_an.x3d"></inline>
+                        <inline nameSpaceName="modela" mapDEFToId="true"   onclick="animatemodeld();" url="../assets/drpepper/export/dr+pepper_an.x3d"></inline>
                       </scene>
     
                     </x3d>
@@ -642,16 +643,16 @@ to-fit=no">
                       3D Image Gallery
                     </div>
                   <div class="gallery col-sm-12 btn-group ">
-                  <a data-src="assets/images/gallery_images/<?php echo $id1;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D Dr Pepper Render" class="thumbnail" >
+                  <a data-src="assets/images/gallery_images/<?php echo $id1;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D  Render" class="thumbnail" >
                     <img class=" img-thumbnail"  src='assets/images/gallery_images/<?php echo $id1;?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $id2;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D Dr Pepper Render" class="thumbnail" >
+                  <a data-src="assets/images/gallery_images/<?php echo $id2;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D  Render" class="thumbnail" >
                     <img class="img-thumbnail"  src='assets/images/gallery_images/<?php echo $id2;?>.jpg'>
                     </a>
-                    <a data-src="assets/images/gallery_images/<?php echo $id3;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D Dr Pepper Render" class="thumbnail" >
+                    <a data-src="assets/images/gallery_images/<?php echo $id3;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D  Render" class="thumbnail" >
                     <img class="card-img-left img-thumbnail"  src='assets/images/gallery_images/<?php echo $id3; ?>.jpg'>
                   </a>
-                  <a data-src="assets/images/gallery_images/<?php echo $id4;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D Dr Pepper  Render"  class="thumbnail">
+                  <a data-src="assets/images/gallery_images/<?php echo $id4;?>.jpg" data-fancybox="pepper_gallery" data-caption="My 3D  Render"  class="thumbnail">
                     <img class=" img-thumbnail"  src='assets/images/gallery_images/<?php echo $id4; ?>.jpg'>
                   </a>  
                 </div>
@@ -695,7 +696,7 @@ to-fit=no">
             Statement of Originality <h1>
             <p>These web pages are submitted as part requirement for the degree of Computing for business and management at the University of Sussex.  They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged". 
   </p>
-  <a href="http://users.sussex.ac.uk/~np330/IvyPeng_web3D/IvyPeng_web3D/index.php/apiGetData">Reference</a>
+  <a href="https://users.sussex.ac.uk/~np330/3dapp/IvyPeng_web3D/index.php/index.php/apiGetData">Reference</a>
   </div>
 
 
@@ -732,15 +733,15 @@ to-fit=no">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script type='text/javascript' src='js/x3dom.js'></script>
-  <script type='text/javascript' src='js/custom.js'></script>
-  <script type='text/javascript' src='js/gallery_generator.js'></script>
+  <script type='text/javascript' src='../js/x3dom.js'></script>
+  <script type='text/javascript' src='../js/custom.js'></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script  src='js/getJsonData.js'></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script  src='js/bootstrap.min.js'></script>
+  <script  src='../js/bootstrap.min.js'></script>
 
   <script>
     Fancybox.bind('[data-fancybox="coke"]', {
@@ -766,6 +767,55 @@ to-fit=no">
       $('[data-toggle="popover"]').popover();   
     });
 
+
+
+
+
+
+    $(document).ready(function(){
+
+    $.getJSON('../model/data.json',function(jsonObj){
+        console.log(jsonObj);
+
+        $('#title_home').html('<h2>' + jsonObj.pageTextData[0].title +'</h2>');
+        $('#subTitle_home').html('<h3>' + jsonObj.pageTextData[0].subTitle +'</h3>');
+        $('#description_home').html('<p>' + jsonObj.pageTextData[0].description +'</p>');
+
+        $('#title_coke').html('<h2>' + jsonObj.pageTextData[1].title +'</h2>');
+        $('#subTitle_coke').html('<h3>' + jsonObj.pageTextData[1].subTitle +'</h3>');
+        $('#description_coke').html('<p>' + jsonObj.pageTextData[1].description +'</p>');
+
+        $('#title_sprite').html('<h2>' + jsonObj.pageTextData[2].title +'</h2>');
+        $('#subTitle_sprite').html('<h3>' + jsonObj.pageTextData[2].subTitle +'</h3>');
+        $('#description_sprite').html('<p>' + jsonObj.pageTextData[2].description +'</p>');
+
+
+
+        $('#title_pepper').html('<h2>' + jsonObj.pageTextData[3].title +'</h2>');
+        $('#subTitle_pepper').html('<h3>' + jsonObj.pageTextData[3].subTitle +'</h3>');
+        $('#description_pepper').html('<p>' + jsonObj.pageTextData[3].description +'</p>');
+
+        $('#x3dModelTitle_coke').html('<h1 class="card-title">' + jsonObj.pageTextData[4].x3dModelTitle +'</h1>');
+        $('#method_coke').html('<p class="card-text">' + jsonObj.pageTextData[4].x3dCreationMethod +'</p>');
+        $('#3dtitle_coke').html('<h2 class="card-title">' + jsonObj.pageTextData[4].title +'</h2>');
+        $('#3dsubtitle_coke').html('<h3>' + jsonObj.pageTextData[4].subTitle +'</h3>');
+        $('#3ddescription_coke').html('<p>' + jsonObj.pageTextData[4].description +'</p>');
+
+        $('#x3dModelTitle_pepper').html('<h1 class="card-title">' + jsonObj.pageTextData[5].x3dModelTitle +'</h1>');
+        $('#method_pepper').html('<p  class="card-text" >' + jsonObj.pageTextData[5].x3dCreationMethod +'</p>');
+        $('#3dtitle_pepper').html('<h2 class="card-title">' + jsonObj.pageTextData[5].title +'</h2>');
+        $('#3dsubtitle_pepper').html('<h3>' + jsonObj.pageTextData[5].subTitle +'</h3>');
+        $('#3ddescription_pepper').html('<p>' + jsonObj.pageTextData[5].description +'</p>');
+
+        $('#x3dModelTitle_sprite').html('<h1 class="card-title">' + jsonObj.pageTextData[6].x3dModelTitle +'</h1>');
+        $('#method_sprite').html('<p class="card-text">' + jsonObj.pageTextData[6].x3dCreationMethod +'</p>');
+        $('#3dtitle_sprite').html('<h2 class="card-title">' + jsonObj.pageTextData[6].title +'</h2>');
+        $('#3dsubtitle_sprite').html('<h3>' + jsonObj.pageTextData[6].subTitle +'</h3>');
+        $('#3ddescription_sprite').html('<p>' + jsonObj.pageTextData[6].description +'</p>');
+
+
+    });
+    });
   </script>
 
 </body>
